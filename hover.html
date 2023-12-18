@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    .hover{
+        width: 100%;
+        height: 100vh;
+        /* background-color: salmon; */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    }
+    .hover-content{
+        width: 100%;
+        display: flex;
+     text-align: center;
+     justify-content: space-evenly;
+    }
+    .hover-img{
+        width: 380px;
+    height: 380px;
+    position: relative;
+    }
+    .hover-img img{
+        width: 380px;
+    height: 380px;
+    }
+    .content{
+    text-align: center;
+    width:100%;
+    height:  100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content > *{
+    transform: translateY(200px);
+    transition: transform 0.6s;
+}
+.content:hover > *{
+    transform: translateY(100px);
+    transition: transform 0.6s;
+    opacity: 1;
+}
+.icon-1{
+    width: 100%;
+    background-color: #ffff;
+    padding: 0rem;
+    display: flex;
+    padding:  0.3rem;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 4rem;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.icon-1 i:hover{
+   color: #fcf7f7;
+   background-color: #ff2020;
+}
+.icon-1 i{
+    font-size: 2.2rem;
+    color: #ff2020;
+    padding: 0.5rem 0.5rem;
+      transition: all 0.8s;
+      cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="hover">
+        <div class="hover-content">
+            <div class="hover-img">
+                <img src="items1.jpg.webp">
+                <div class="content">
+                    <div class="icon-1">
+                        <i class="bi bi-cart3"></i>
+                        <i class="bi bi-heart-fill"></i>
+                        <i class="bi bi-search-heart-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="hover-img">
+                <img src="items2.jpg.webp">
+                <div class="content">
+                    <div class="icon-1">
+                        <i class="bi bi-cart3"></i>
+                        <i class="bi bi-heart-fill"></i>
+                        <i class="bi bi-search-heart-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="hover-img">
+                <img src="items3.jpg.webp">
+                <div class="content">
+                    <div class="icon-1">
+                        <i class="bi bi-cart3"></i>
+                        <i class="bi bi-heart-fill"></i>
+                        <i class="bi bi-search-heart-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

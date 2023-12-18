@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    html{
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+    header{
+       width: 100%;
+        height: 100vh;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 14%;
+        background-color: #fcf7f7;
+    z-index: 20;
+    /* overflow: hidden; */
+    }
+    .woman-section{
+        width: 100%;
+        height: 100vh;
+    }
+    .navbar h5{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        right: 8rem;
+        bottom: 2rem;
+        padding: 1rem;
+        background-color: #ff2020;
+        font-size: 1.2rem;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+    }
+    
+    .navbar ul{
+        display: flex;
+    }
+    .navbar ul li{
+        
+        list-style: none;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        font-size: 1.9rem;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 2.5rem;
+        color: #000;
+        transition: all 0.5s;
+        }
+        .navbar ul li a:hover{
+            color: #ff2020;
+        }
+        .navbar h1{
+            font-family: 'Dancing Script', cursive;
+           
+            font-size: 4rem;
+            /* font-style: oblique; */
+            /* text-shadow: 3px 0px 3px #ff2020; */
+            color: #343232;
+        }
+        .navbar .icon i{
+            font-size: 2.5rem;
+            margin-left: 1.6rem;
+        }
+        .navbar .icon i:hover{
+            color: #ff2020;
+        }
+        .woman-content{
+            width: 100%;
+            height: 50%;
+    background-color: rgb(244, 220, 173);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        .woman-content h2{
+   color: #343232;
+   font-size: 4rem;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 600;
+   margin-bottom: 1.8rem;
+        }
+        .woman-content a{
+            color: rgba(128, 128, 128, 0.738);
+            font-size: 1.8rem;
+            text-decoration: none;
+            margin-left: 1.3rem;
+        }
+        .active-1{
+            border-right: 2px solid  rgba(128, 128, 128, 0.738);
+            padding-right: 1.3rem ;
+        }
+        .woman-img{
+            width: 100%;
+            height: 100vh;
+            /* background-color: #ff2020; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .woman-img-1{
+            width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center; 
+        }
+        .woman-img-1 img{
+            width: 100%;
+    display: block;
+    margin: auto;
+    background-attachment: fixed;
+        }
+        .img-2{ 
+        width: 300px;
+        height: 300px;
+        position: relative;
+        transition: all 1s;
+}
+.content-1{
+    text-align: center;
+    width:300px;
+    height: 336px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content-1 > *{
+    transform: translateY(200px);
+    transition: transform 0.6s;
+}
+.content-1:hover > *{
+    transform: translateY(100px);
+    transition: transform 0.6s;
+    opacity: 1;
+}
+.icon-1{
+    width: 100%;
+    background-color: #ffff;
+    padding: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 4rem;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.icon-1 i:hover{
+   color: #fcf7f7;
+   background-color: #ff2020;
+}
+.icon-1 i{
+    font-size: 2.2rem;
+    color: #ff2020;
+    padding: 1rem 1rem;
+      transition: all 0.8s;
+      cursor: pointer;
+}
+.heading{
+    text-align: center;
+    width: 100%;
+}
+.heading h2{
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.para-1{
+    display: flex;
+    justify-content: center;
+}
+.para-1 p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(192, 182, 182, 0.861);
+
+}
+ .para-1 span{
+    text-decoration: line-through;
+    font-size: 1.8rem;
+    color: #ff2020;
+    margin-left: 1.8rem;
+    font-family:  Helvetica, sans-serif;
+}
+/* ------------footer---------- */
+.footer{
+    width: 100%;
+    height: 130vh;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+   }
+   .top-1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 25%;
+    align-items: center;
+    /* background-color: aqua; */
+   padding: 0 9rem;
+   border-bottom: 1px solid rgba(128, 128, 128, 0.494);
+   }
+   .top-1 h2{
+    color: #fcf7f7;
+    font-size: 3.5rem;
+    margin-bottom: 1.7rem;
+    font-weight: 400;
+   }
+   .top-1 p{
+    color: #fcf7f7;
+    font-size: 1.8rem;
+    width: 300px;
+    /* font-weight: bold; */
+    line-height: 25px;
+    margin-bottom: 2rem;
+   }
+   .footer-icon{
+    font-size: 3.5rem;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+   }
+   .footer-icon i{
+    margin-left: 1rem;
+    color: #727272;
+    transition: all 0.7s;
+    display: inline-block;
+
+   }
+   .footer-icon i:hover{
+    color: #ff2020;
+    transform: rotate(360deg);
+   }
+   .email{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+   }
+   .email input{
+    width: 490px;
+    padding: 27px 30px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+   }
+    .bts{
+    width: 160px;
+    margin-left: 1.5rem;
+    padding: 27px 30px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    background-color: #ff2020;
+    cursor: pointer;
+    
+   }
+   .top-2{
+    width: 100%;
+    height: 45%;
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.494);
+   }
+   .top-2 h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 3.5rem;
+    transition: all 0.8s;
+   }
+   .top-2 h2:hover{
+    color: #ff2020;
+   }
+   .top-2 p{
+    font-size: 1.9rem;
+    color: #70746b;
+    margin-bottom: 1rem;
+    cursor: pointer;
+   }
+   .top-2 p:hover{
+    text-decoration: underline;
+   }
+   .top-3{
+    height:  20%;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+   }
+   .top-3 p{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+   }
+   .top-3 p i{
+    color: #ff2020;
+   }
+        
+        </style>
+</head>
+<body>
+    <div class="woman-section">
+        <div class="navbar">
+            <h1>Best collection</h1>
+            <div class="list">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="#">Man</a></li>
+                    <li><a href="#">Woman</a></li>
+                    <li><a href="#">Baby-collection</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="icon">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="bi bi-person"></i>
+                <i class="fa fa-shopping-cart" aria-hidden="true" style="color: #ff2020;"></i>
+            </div>
+            <h5>1</h5>
+        </div>
+        <div class="woman-content">
+            <h2>Category</h2>
+            <div class="woman-content-hed">
+                <a href="" class="active-1">Home</a>
+                <a href="">Category</a>
+            </div>
+        </div>
+    </div>
+    <div class="woman-img">
+        <div class="woman-img-1">
+            <div class="img-2">
+            <img src="latest2.jpg.webp" alt="">
+            <div class="content-1">
+            <div class="icon-1">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-search-plus" aria-hidden="true"></i>
+            </div>
+            </div>
+            <div class="heading">
+                <h2>Cashmere Tank + Bank</h2>
+                <div class="para-1">
+                    <p>$97.000</p>
+                    <span>$120.00</span>
+                </div>
+            </div>
+        </div>
+            <div class="img-2">
+            <img src="latest3.jpg.webp" alt="">
+        <div class="content-1">
+            <div class="icon-1">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-search-plus" aria-hidden="true"></i></div>
+        </div>
+        <div class="heading">
+            <h2>Cashmere Tank + Bank</h2>
+            <div class="para-1">
+                <p>$97.000</p>
+                <span>$120.00</span>
+            </div>
+        </div>
+    </div>
+        <div class="img-2">
+            <img src="latest4.jpg.webp" alt="">
+            <div class="content-1">
+                <div class="icon-1">
+                    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    <i class="fa fa-search-plus" aria-hidden="true"></i></div>
+            </div>
+            <div class="heading">
+                <h2>Cashmere Tank + Bank</h2>
+                <div class="para-1">
+                    <p>$97.000</p>
+                    <span>$120.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="img-2">
+            <img src="latest2.jpg.webp" alt="">
+            <div class="content-1">
+                <div class="icon-1">
+                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-search-plus" aria-hidden="true"></i></div>
+            </div>
+            <div class="heading">
+                <h2>Cashmere Tank + Bank</h2>
+                <div class="para-1">
+                    <p>$97.000</p>
+                    <span>$120.00</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div></div>
+    <!-- ---------------footer---------- -->
+    <div class="footer">
+        <div class="top-1">
+            <div class="footer-heading">
+                <div class="footer-heading-1">
+                    <h2>Subscribe Newsletter</h2>
+                    <p>Subscribe newsletter to get 5% on all products.</p>
+                    <div class="footer-icon">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="email">
+                <input type="email" placeholder="Enter Your Email">
+                <div class="button">
+                    <button class="bts">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="top-2">
+            <div class="top-2-hed">
+                <h2>Shop Men</h2>
+                <p>Clothing Fashion</p>
+                <p>Winter</p>
+                <p>Summer</p>
+                <p>Formal</p>
+                <p>Casual</p>
+            </div>
+            <div class="top-2-hed">
+                <h2>Shop Woman</h2>
+                <p>Clothing Fashion</p>
+                <p>Winter</p>
+                <p>Summer</p>
+                <p>Formal</p>
+                <p>Casual</p>
+            </div>
+            <div class="top-2-hed">
+                <h2>Baby Collection</h2>
+                <p>Clothing Fashion</p>
+                <p>Winter</p>
+                <p>Summer</p>
+                <p>Formal</p>
+                <p>Casual</p>
+            </div>
+            <div class="top-2-hed">
+                <h2>Quick Links</h2>
+                <p>Clothing Fashion</p>
+                <p>Winter</p>
+                <p>Summer</p>
+                <p>Formal</p>
+                <p>Casual</p>
+            </div>
+        </div>
+        <div class="top-3">
+          <div class="top-3-para">
+            <p>Copyright ©2023 All rights reserved | This template is made with 
+                <i class="bi bi-heart-fill"></i> by Saad Ahsan</p>
+          </div>
+        </div>
+       </div>
+</body>
+</html>
